@@ -1,0 +1,52 @@
+[
+  {
+    "id": "glow-cream-001",
+    "name": "Glow Cream – Skin Brightening",
+    "category": "Moisturizers",
+    "price": 45.00,
+    "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
+    "description": "A natural Swedish glow cream that brightens and evens out your skin tone. Enriched with botanical extracts.",
+    "ingredients": ["Water", "Glycerin", "Shea Butter", "Vitamin C", "Rosehip Oil"],
+    "usage": "Apply a dime-sized amount to cleansed face and neck morning and night."
+  },
+  {
+    "id": "lumin-c-002",
+    "name": "Lumin-C Face Cream",
+    "category": "Moisturizers",
+    "price": 55.00,
+    "image": "https://images.unsplash.com/photo-1608248593842-8021c640e0ab?auto=format&fit=crop&w=800&q=80",
+    "description": "Highly acclaimed for lightening dark spots and bringing a youthful radiance. Dermatologically tested.",
+    "ingredients": ["Water", "Ascorbic Acid", "Hyaluronic Acid", "Squalane", "Vitamin E"],
+    "usage": "Use nightly after cleansing. Avoid direct sun exposure after application."
+  },
+  {
+    "id": "aloe-niacinamide-003",
+    "name": "Aloe + Niacinamide Toner",
+    "category": "Toners",
+    "price": 32.00,
+    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80",
+    "description": "Soothe and refine your pores with the calming power of aloe and the balancing effects of niacinamide.",
+    "ingredients": ["Aloe Vera Juice", "Niacinamide (Vitamin B3)", "Witch Hazel", "Chamomile Extract"],
+    "usage": "Apply to a cotton pad and sweep across face after cleansing."
+  },
+  {
+    "id": "hydrating-cleanser-004",
+    "name": "Gentle Hydrating Cleanser",
+    "category": "Cleansers",
+    "price": 28.00,
+    "image": "https://images.unsplash.com/photo-1556228720-1c2a468962ff?auto=format&fit=crop&w=800&q=80",
+    "description": "A non-stripping, hydrating face wash that effectively removes impurities while respecting the skin barrier.",
+    "ingredients": ["Water", "Coco-Glucoside", "Glycerin", "Ceramides", "Oat Extract"],
+    "usage": "Massage onto damp skin for 60 seconds, then rinse thoroughly."
+  },
+  {
+    "id": "swedish-hydrator-005",
+    "name": "Arctic Deep Hydrator",
+    "category": "Hydrators",
+    "price": 60.00,
+    "image": "https://images.unsplash.com/photo-1615397323602-9856f68c3ef9?auto=format&fit=crop&w=800&q=80",
+    "description": "Lock in intense moisture with this deep hydrator formulated with Swedish cloudberry and pure spring water.",
+    "ingredients": ["Water", "Cloudberry Seed Oil", "Sodium Hyaluronate", "Panthenol"],
+    "usage": "Apply as the final step in your evening routine or before sunscreen in the morning."
+  }
+]

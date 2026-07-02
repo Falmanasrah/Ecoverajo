@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ecovera — Sustainable Insect Protein, Oil & Bio-Fertilizer. A Jordan-based bio-technology venture turning organic waste into high-value protein, oil, and fertilizer.">
+    <title>Ecovera — Sustainable Insect Protein, Oil & Bio-Fertilizer</title>
+    
+    <link rel="icon" type="image/jpeg" href="./assets/logo.jpeg">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Ecovera — Sustainable Insect Protein, Oil & Bio-Fertilizer">
+    <meta property="og:description" content="Transforming waste into sustainable value through Black Soldier Fly larvae within a scalable circular-economy model.">
+    <meta property="og:image" content="./assets/logo.jpeg">
+    <meta property="og:url" content="https://ecovera.com">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Background Textures -->
+    <div class="site-noise"></div>
+    <div class="site-topographic"></div>
+
+    <!-- Navbar -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo-lockup" aria-label="Ecovera Home">
+                <div class="logo-mark-chip">
+                    <img src="./assets/logo.jpeg" alt="" aria-hidden="true" class="logo-img">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name" data-i18n="brand.name">Ecovera</span>
+                    <span class="logo-tag" data-i18n="brand.tagline">Sustainable Feed & Bio Solutions</span>
+                </div>
+            </a>
+            
+            <div class="nav-right">
+                <nav class="nav-links">
+                    <a href="#about" class="nav-item" data-i18n="nav.about">About</a>
+                    <a href="#process" class="nav-item" data-i18n="nav.process">Process</a>
+                    <a href="#products" class="nav-item" data-i18n="nav.products">Products</a>
+                    <a href="#specifications" class="nav-item" data-i18n="nav.specs">Specs</a>
+                    <a href="#market" class="nav-item" data-i18n="nav.market">Market</a>
+                    <a href="#impact" class="nav-item" data-i18n="nav.impact">Impact</a>
+                    <a href="#faq" class="nav-item" data-i18n="nav.faq">FAQ</a>
+                    <a href="#contact" class="btn btn-primary nav-btn" data-i18n="nav.contact">Get in Touch</a>
+                </nav>
+
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn" aria-label="Change Language" aria-expanded="false" aria-controls="lang-menu">
+                        <i data-lucide="globe" class="icon-sm"></i>
+                        <span class="current-lang">EN</span>
+                        <i data-lucide="chevron-down" class="icon-xs"></i>
+                    </button>
+                    <div class="lang-menu" id="lang-menu">
+                        <button class="lang-option" data-lang="en">
+                            <span class="flag">🇺🇸</span> English
+                        </button>
+                        <button class="lang-option" data-lang="ar">
+                            <span class="flag">🇯🇴</span> العربية
+                        </button>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Full Screen Menu -->
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-nav">
+            <a href="#about" class="mobile-nav-item" data-i18n="nav.about">About</a>
+            <a href="#process" class="mobile-nav-item" data-i18n="nav.process">Process</a>
+            <a href="#products" class="mobile-nav-item" data-i18n="nav.products">Products</a>
+            <a href="#specifications" class="mobile-nav-item" data-i18n="nav.specs">Specifications</a>
+            <a href="#market" class="mobile-nav-item" data-i18n="nav.market">Market</a>
+            <a href="#impact" class="mobile-nav-item" data-i18n="nav.impact">Impact</a>
+            <a href="#faq" class="mobile-nav-item" data-i18n="nav.faq">FAQ</a>
+            <a href="#contact" class="btn btn-primary mobile-nav-btn" data-i18n="nav.contact">Get in Touch</a>
+            
+            <div class="mobile-lang-switcher">
+                <button class="mobile-lang-option" data-lang="en"><span class="flag">🇺🇸</span> English</button>
+                <button class="mobile-lang-option" data-lang="ar"><span class="flag">🇯🇴</span> العربية</button>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="cursor-glow" id="cursor-glow"></div>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section dark-bg">
+            <div class="deco-layer">
+                <div class="hero-orb-1"></div>
+                <div class="hero-orb-2"></div>
+            </div>
+            <div class="hero-bg-elements">
+                <div class="gold-line motif-1"></div>
+                <div class="gold-line motif-2"></div>
+                <div class="gold-line motif-3"></div>
+            </div>
+            
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <span class="eyebrow" data-i18n="brand.tagline">Sustainable Feed & Bio Solutions</span>
+                    <h1 class="hero-title" data-i18n="hero.title">Transforming Waste into Sustainable Value</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">
+                        A Jordan-based bio-technology venture turning organic waste into high-value protein, oil, and fertilizer — powered by Black Soldier Fly larvae within a scalable circular-economy model.
+                    </p>
+                    
+                    <div class="value-props-row">
+                        <span class="vp-item"><i data-lucide="refresh-cw" class="vp-icon"></i> <span data-i18n="hero.vp1">Circular by design</span></span>
+                        <span class="vp-item"><i data-lucide="clock" class="vp-icon"></i> <span data-i18n="hero.vp2">10–14 day cycle</span></span>
+                        <span class="vp-item"><i data-lucide="trending-up" class="vp-icon"></i> <span data-i18n="hero.vp3">Four revenue streams</span></span>
+                    </div>
+
+                    <div class="hero-ctas">
+                        <a href="#products" class="btn btn-primary" data-i18n="hero.cta.primary">Explore Our Products</a>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta.secondary">Partner With Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-bottom-cue">
+                <div class="what-we-make-band">
+                    <span class="wwm-label" data-i18n="hero.wwm.label">What We Make:</span>
+                    <a href="#spec-full-fat-meal" class="wwm-chip smooth-scroll" data-i18n="hero.wwm.protein">Protein</a>
+                    <a href="#spec-bsf-oil" class="wwm-chip smooth-scroll" data-i18n="hero.wwm.oil">Oil</a>
+                    <a href="#spec-bsf-frass" class="wwm-chip smooth-scroll" data-i18n="hero.wwm.fertilizer">Fertilizer</a>
+                    <a href="#spec-bsf-frass" class="wwm-chip smooth-scroll" data-i18n="hero.wwm.frass">Frass</a>
+                </div>
+                <div class="scroll-cue">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Bar -->
+        <section id="stats" class="stats-section dark-bg reveal">
+            <div class="container stats-container">
+                <div class="stat-item">
+                    <h2 class="counter" data-target="10">0</h2>
+                    <p data-i18n="stats.rooms">Fly Rooms</p>
+                    <span class="stat-detail" data-i18n="stats.rooms.detail">operational today</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h2 class="counter" data-target="320">0</h2>
+                    <p data-i18n="stats.bins">Rearing Bins</p>
+                    <span class="stat-detail" data-i18n="stats.bins.detail">full-scale capacity</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h2><span class="counter" data-target="25">0</span>t</h2>
+                    <p data-i18n="stats.capacity">Daily Capacity</p>
+                    <span class="stat-detail" data-i18n="stats.capacity.detail">organic waste processed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h2 class="counter" data-target="4">0</h2>
+                    <p data-i18n="stats.revenue">Revenue Streams</p>
+                    <span class="stat-detail" data-i18n="stats.revenue.detail">de-risked model</span>
+                </div>
+            </div>
+            <div class="stats-tags">
+                <div class="container tags-container">
+                    <span class="tag-chip" data-i18n="tags.waste">Waste Management</span>
+                    <span class="tag-chip" data-i18n="tags.food">Food Security</span>
+                    <span class="tag-chip" data-i18n="tags.circular">Circular Economy</span>
+                    <span class="tag-chip" data-i18n="tags.sustainability">Sustainability</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section light-bg reveal">
+            <div class="deco-layer">
+                <svg class="about-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M42.7,-73.4C56.6,-66.6,69.9,-56.3,79.1,-43.3C88.4,-30.2,93.5,-15.1,91.8,-1C90.1,13.1,81.5,26.2,72.1,38C62.7,49.8,52.5,60.3,40.5,69.5C28.4,78.8,14.2,86.8,0.3,86.2C-13.6,85.6,-27.2,76.4,-40.7,68C-54.3,59.6,-67.7,52,-75.8,39.9C-83.9,27.8,-86.6,11.4,-84.9,-4C-83.2,-19.4,-77.2,-33.7,-68.2,-45.5C-59.2,-57.3,-47.1,-66.5,-34.1,-73.8C-21,-81.1,-7.1,-86.5,6.3,-97.6C19.8,-108.7,28.7,-80.1,42.7,-73.4Z" transform="translate(100 100)" />
+                </svg>
+            </div>
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow" data-i18n="about.eyebrow">The Project</span>
+                    <h2 class="section-title" data-i18n="about.title">An Integrated Circular System.</h2>
+                    <p class="section-copy" data-i18n="about.copy">
+                        Ecovera was founded to address a dual regional challenge — growing volumes of unused organic waste, and heavy dependence on imported protein feed. Using the lifecycle of the Black Soldier Fly, it converts organic material into a protein- and fat-rich biomass, plus a natural organic fertilizer (frass) as a by-product.
+                    </p>
+                </div>
+                
+                <div class="vision-callout">
+                    <blockquote data-i18n="about.quote">
+                        "To become a leading model for the circular economy and bio-technology in Jordan and the region — transforming an environmental problem into a sustainable economic value chain."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why BSF Section -->
+        <section id="why-bsf" class="why-bsf-section dark-bg reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow" data-i18n="why.eyebrow">Why Black Soldier Fly</span>
+                    <h2 class="section-title" data-i18n="why.title">A Superior Bio-Converter</h2>
+                </div>
+                <div class="two-columns">
+                    <div class="column panel">
+                        <h3 class="column-title"><span data-i18n="why.edge.title">The Edge</span> <span class="subtitle" data-i18n="why.edge.subtitle">Operational advantages</span></h3>
+                        <ul class="icon-list">
+                            <li><i data-lucide="zap" class="list-icon"></i> <span data-i18n="why.edge.1">Rapid organic-waste conversion</span></li>
+                            <li><i data-lucide="droplet" class="list-icon"></i> <span data-i18n="why.edge.2">Low water & energy use</span></li>
+                            <li><i data-lucide="clock" class="list-icon"></i> <span data-i18n="why.edge.3">Short cycle (10–14 days)</span></li>
+                            <li><i data-lucide="layers" class="list-icon"></i> <span data-i18n="why.edge.4">Multi-source production</span></li>
+                            <li><i data-lucide="leaf" class="list-icon"></i> <span data-i18n="why.edge.5">Low environmental footprint</span></li>
+                            <li><i data-lucide="bar-chart" class="list-icon"></i> <span data-i18n="why.edge.6">High scalability</span></li>
+                        </ul>
+                    </div>
+                    <div class="column panel">
+                        <h3 class="column-title"><span data-i18n="why.feed.title">The Feedstock</span> <span class="subtitle" data-i18n="why.feed.subtitle">Accepted inputs</span></h3>
+                        <ul class="icon-list">
+                            <li><i data-lucide="shopping-basket" class="list-icon"></i> <span data-i18n="why.feed.1">Central-market organic waste</span></li>
+                            <li><i data-lucide="utensils" class="list-icon"></i> <span data-i18n="why.feed.2">Restaurant & hotel residuals</span></li>
+                            <li><i data-lucide="factory" class="list-icon"></i> <span data-i18n="why.feed.3">Food-processing waste</span></li>
+                            <li><i data-lucide="wheat" class="list-icon"></i> <span data-i18n="why.feed.4">Agricultural residues</span></li>
+                            <li><i data-lucide="beef" class="list-icon"></i> <span data-i18n="why.feed.5">Select animal by-products</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process-section light-bg reveal">
+            <div class="deco-layer process-dot-grid"></div>
+            <div class="deco-layer">
+                <svg class="process-curve" viewBox="0 0 1000 200" preserveAspectRatio="none">
+                    <path d="M0,100 C250,200 750,0 1000,100" />
+                </svg>
+            </div>
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow" data-i18n="process.eyebrow">Our Methodology</span>
+                    <h2 class="section-title" data-i18n="process.title">From Egg to Finished Product</h2>
+                    <p class="section-copy" data-i18n="process.copy">A continuous, zero-waste biological processing cycle.</p>
+                </div>
+                
+                <div class="timeline-horizontal">
+                    <div class="timeline-connector"></div>
+                    <div class="timeline-step">
+                        <div class="step-marker">01</div>
+                        <div class="step-card">
+                            <div class="step-icon"><i data-lucide="egg"></i></div>
+                            <h3 data-i18n="process.1.title">Nursery</h3>
+                            <p data-i18n="process.1.copy">Egg collection & hatching in a controlled-temperature, humidity-managed environment.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-marker">02</div>
+                        <div class="step-card">
+                            <div class="step-icon"><i data-lucide="bug"></i></div>
+                            <h3 data-i18n="process.2.title">Rearing</h3>
+                            <p data-i18n="process.2.copy">10–14 day feeding cycle; larvae transform organic waste into protein/fat-rich biomass.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-marker">03</div>
+                        <div class="step-card">
+                            <div class="step-icon"><i data-lucide="infinity"></i></div>
+                            <h3 data-i18n="process.3.title">Pupation</h3>
+                            <p data-i18n="process.3.copy">Breeding & egg cycle; a portion of larvae is retained for continuous in-house operation.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-marker">04</div>
+                        <div class="step-card">
+                            <div class="step-icon"><i data-lucide="package"></i></div>
+                            <h3 data-i18n="process.4.title">Harvest</h3>
+                            <p data-i18n="process.4.copy">Drying & extraction; larvae separated from fertilizer, processed into protein, oil, and compost.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products-section dark-bg reveal">
+            <div class="deco-layer">
+                <svg class="products-leaf" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M50,0 C80,0 100,20 100,50 C100,80 50,100 50,100 C50,100 0,80 0,50 C0,20 20,0 50,0 Z" />
+                </svg>
+            </div>
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow" data-i18n="products.eyebrow">Our Output</span>
+                    <h2 class="section-title" data-i18n="products.title">Four Products Under the Ecovera Label.</h2>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-target="#spec-bsf-frass" role="button" tabindex="0">
+                        <div class="product-image-wrapper">
+                            <img src="./assets/product-fertilizer.jpeg" alt="" class="product-image-bg" aria-hidden="true">
+                            <img src="./assets/product-fertilizer.jpeg" alt="Bio Fertilizer Bag" class="product-image crop-center-bag">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-header">
+                                <h3 data-i18n="prod.2.title">Bio Fertilizer</h3>
+                                <span class="weight-tag" data-i18n="prod.2.weight">50 KG</span>
+                            </div>
+                            <p data-i18n="prod.2.copy">Organic fertilizer that improves soil fertility & water retention; certified and export-ready.</p>
+                            <span class="product-link"><span data-i18n="prod.link">View Specifications</span> <i data-lucide="arrow-right" class="icon-xs"></i></span>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card" data-target="#spec-full-fat-meal" role="button" tabindex="0">
+                        <div class="product-image-wrapper">
+                            <img src="./assets/product-protein.jpeg" alt="" class="product-image-bg" aria-hidden="true">
+                            <img src="./assets/product-protein.jpeg" alt="Protein Feed Bag" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-header">
+                                <h3 data-i18n="prod.1.title">Protein Feed</h3>
+                                <span class="weight-tag" data-i18n="prod.1.weight">25 KG</span>
+                            </div>
+                            <p data-i18n="prod.1.copy">High-protein feed from BSF larvae for poultry & aquaculture; a sustainable alternative to fishmeal.</p>
+                            <span class="product-link"><span data-i18n="prod.link">View Specifications</span> <i data-lucide="arrow-right" class="icon-xs"></i></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card" data-target="#spec-bsf-oil" role="button" tabindex="0">
+                        <div class="product-image-wrapper">
+                            <img src="./assets/product-oil.jpeg" alt="" class="product-image-bg" aria-hidden="true">
+                            <img src="./assets/product-oil.jpeg" alt="Insect Oil Drum" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-header">
+                                <h3 data-i18n="prod.3.title">Insect Oil</h3>
+                                <span class="weight-tag" data-i18n="prod.3.weight">50 KG</span>
+                            </div>
+                            <p data-i18n="prod.3.copy">Natural, anti-bacterial, multi-purpose BSF oil for feed and industrial applications.</p>
+                            <span class="product-link"><span data-i18n="prod.link">View Specifications</span> <i data-lucide="arrow-right" class="icon-xs"></i></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4: Branded Card (No Image) -->
+                    <div class="product-card" data-target="#spec-bsf-frass" role="button" tabindex="0">
+                        <div class="product-image-wrapper placeholder-wrapper">
+                            <div class="placeholder-content">
+                                <div class="logo-mark-chip large">
+                                    <img src="./assets/logo.jpeg" alt="" class="logo-img">
+                                </div>
+                                <span class="placeholder-label" data-i18n="prod.4.placeholder">BSF Compost &middot; 50 KG</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-header">
+                                <h3 data-i18n="prod.4.title">BSF Compost</h3>
+                                <span class="weight-tag" data-i18n="prod.4.weight">50 KG</span>
+                            </div>
+                            <p data-i18n="prod.4.copy">Premium organic compost rich in micronutrients and beneficial soil microbes for high-yield agriculture.</p>
+                            <span class="product-link"><span data-i18n="prod.link">View Specifications</span> <i data-lucide="arrow-right" class="icon-xs"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications Section -->
+        <section id="specifications" class="specifications-section light-bg reveal">
+            <div class="deco-layer market-glass-lines"></div>
+            <div class="container">
+                <div class="spec-header">
+                    <div>
+                        <span class="eyebrow" data-i18n="specs.eyebrow">Technical Details</span>
+                        <h2 class="section-title" data-i18n="specs.title">A Complete Black Soldier Fly Ingredient Range.</h2>
+                    </div>
+                </div>
+                
+                <div class="badges-row">
+                    <span class="badge"><i data-lucide="check-circle" class="badge-icon"></i> <span data-i18n="specs.badge.1">Free from antibiotics & hormones</span></span>
+                    <span class="badge"><i data-lucide="check-circle" class="badge-icon"></i> <span data-i18n="specs.badge.2">Controlled Processing</span></span>
+                    <span class="badge"><i data-lucide="check-circle" class="badge-icon"></i> <span data-i18n="specs.badge.3">Consistent Quality</span></span>
+                    <span class="badge"><i data-lucide="check-circle" class="badge-icon"></i> <span data-i18n="specs.badge.4">Sustainable & Eco-Friendly</span></span>
+                </div>
+
+                <div class="spec-interactive">
+                    <div class="spec-tab-buttons">
+                        <button class="spec-tab-btn active" data-tab="spec-frozen-larvae" data-i18n="specs.tab.1">Frozen Larvae</button>
+                        <button class="spec-tab-btn" data-tab="spec-dried-larvae" data-i18n="specs.tab.2">Dried Larvae</button>
+                        <button class="spec-tab-btn" data-tab="spec-defatted-meal" data-i18n="specs.tab.3">Defatted Meal</button>
+                        <button class="spec-tab-btn" id="btn-spec-full-fat-meal" data-tab="spec-full-fat-meal" data-i18n="specs.tab.4">Full-Fat Meal</button>
+                        <button class="spec-tab-btn" id="btn-spec-bsf-oil" data-tab="spec-bsf-oil" data-i18n="specs.tab.5">BSF Oil</button>
+                        <button class="spec-tab-btn" id="btn-spec-bsf-frass" data-tab="spec-bsf-frass" data-i18n="specs.tab.6">BSF Frass</button>
+                    </div>
+
+                    <div class="spec-tab-content">
+                        <!-- Keeping tables as is, they contain universal numbers/scientific terms mostly, but I will add i18n to keys -->
+                        <!-- Item 1 -->
+                        <div class="spec-panel active" id="spec-frozen-larvae">
+                            <h3 class="panel-title"><span data-i18n="specs.tab.1">Frozen BSF Larvae</span> <span class="panel-subtitle" data-i18n="specs.p1.sub">fresh-frozen whole larvae</span></h3>
+                            <div class="table-responsive">
+                                <table class="spec-table">
+                                    <thead><tr><th data-i18n="specs.table.param">Parameter</th><th data-i18n="specs.table.value">Value</th></tr></thead>
+                                    <tbody>
+                                        <tr><td data-i18n="specs.table.protein">Crude Protein</td><td>16–20%</td></tr>
+                                        <tr><td data-i18n="specs.table.fat">Crude Fat</td><td>10–15%</td></tr>
+                                        <tr><td data-i18n="specs.table.moisture">Moisture</td><td>60–70%</td></tr>
+                                        <tr><td data-i18n="specs.table.fiber">Crude Fiber</td><td>4–6%</td></tr>
+                                        <tr><td data-i18n="specs.table.ash">Ash</td><td>2–4%</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="spec-panel" id="spec-dried-larvae">
+                            <h3 class="panel-title"><span data-i18n="specs.tab.2">Dried BSF Larvae</span> <span class="panel-subtitle" data-i18n="specs.p2.sub">whole dried</span></h3>
+                            <div class="table-responsive">
+                                <table class="spec-table">
+                                    <thead><tr><th data-i18n="specs.table.param">Parameter</th><th data-i18n="specs.table.value">Value</th></tr></thead>
+                                    <tbody>
+                                        <tr><td data-i18n="specs.table.protein">Crude Protein</td><td>40–45%</td></tr>
+                                        <tr><td data-i18n="specs.table.fat">Crude Fat</td><td>30–35%</td></tr>
+                                        <tr><td data-i18n="specs.table.moisture">Moisture</td><td dir="ltr">&lt;8%</td></tr>
+                                        <tr><td data-i18n="specs.table.fiber">Crude Fiber</td><td>6–8%</td></tr>
+                                        <tr><td data-i18n="specs.table.ash">Ash</td><td>8–10%</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="spec-panel" id="spec-defatted-meal">
+                            <h3 class="panel-title"><span data-i18n="specs.tab.3">Defatted BSF Meal</span> <span class="panel-subtitle" data-i18n="specs.p3.sub">concentrated protein meal</span></h3>
+                            <div class="table-responsive">
+                                <table class="spec-table">
+                                    <thead><tr><th data-i18n="specs.table.param">Parameter</th><th data-i18n="specs.table.value">Value</th></tr></thead>
+                                    <tbody>
+                                        <tr><td data-i18n="specs.table.protein">Crude Protein</td><td>58–62%</td></tr>
+                                        <tr><td data-i18n="specs.table.fat">Crude Fat</td><td>8–12%</td></tr>
+                                        <tr><td data-i18n="specs.table.moisture">Moisture</td><td dir="ltr">&lt;8%</td></tr>
+                                        <tr><td data-i18n="specs.table.fiber">Crude Fiber</td><td>6–8%</td></tr>
+                                        <tr><td data-i18n="specs.table.ash">Ash</td><td>8–10%</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="spec-panel" id="spec-full-fat-meal">
+                            <h3 class="panel-title"><span data-i18n="specs.tab.4">Full-Fat BSF Meal</span> <span class="panel-subtitle" data-i18n="specs.p4.sub">energy-rich whole meal</span></h3>
+                            <div class="table-responsive">
+                                <table class="spec-table">
+                                    <thead><tr><th data-i18n="specs.table.param">Parameter</th><th data-i18n="specs.table.value">Value</th></tr></thead>
+                                    <tbody>
+                                        <tr><td data-i18n="specs.table.protein">Crude Protein</td><td>40–45%</td></tr>
+                                        <tr><td data-i18n="specs.table.fat">Crude Fat</td><td>30–35%</td></tr>
+                                        <tr><td data-i18n="specs.table.moisture">Moisture</td><td dir="ltr">&lt;8%</td></tr>
+                                        <tr><td data-i18n="specs.table.fiber">Crude Fiber</td><td>6–8%</td></tr>
+                                        <tr><td data-i18n="specs.table.ash">Ash</td><td>8–10%</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="spec-panel" id="spec-bsf-oil">
+                            <h3 class="panel-title"><span data-i18n="specs.tab.5">BSF Oil</span> <span class="panel-subtitle" data-i18n="specs.p5.sub">premium insect oil</span></h3>
+                            <div class="table-responsive">
+                                <table class="spec-table">
+                                    <thead><tr><th data-i18n="specs.table.param">Parameter</th><th data-i18n="specs.table.value">Value</th></tr></thead>
+                                    <tbody>
+                                        <tr><td data-i18n="specs.table.fat">Crude Fat</td><td dir="ltr">&gt;99%</td></tr>
+                                        <tr><td data-i18n="specs.table.moisture">Moisture</td><td dir="ltr">&lt;0.5%</td></tr>
+                                        <tr><td data-i18n="specs.table.lauric">Lauric Acid</td><td>35–50%</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="spec-note"><strong data-i18n="specs.note.label">Note:</strong> <span data-i18n="specs.p5.note">Rich in MCFAs, high oxidative stability.</span></p>
+                        </div>
+
+                        <!-- Item 6 -->
+                        <div class="spec-panel" id="spec-bsf-frass">
+                            <h3 class="panel-title"><span data-i18n="specs.tab.6">BSF Frass</span> <span class="panel-subtitle" data-i18n="specs.p6.sub">organic bio-fertilizer</span></h3>
+                            <div class="table-responsive">
+                                <table class="spec-table">
+                                    <thead><tr><th data-i18n="specs.table.param">Parameter</th><th data-i18n="specs.table.value">Value</th></tr></thead>
+                                    <tbody>
+                                        <tr><td data-i18n="specs.table.organic">Organic Matter</td><td>60–75%</td></tr>
+                                        <tr><td data-i18n="specs.table.nitrogen">Total Nitrogen (N)</td><td>2–4%</td></tr>
+                                        <tr><td data-i18n="specs.table.phos">Available Phosphorus (P₂O₅)</td><td>2–3%</td></tr>
+                                        <tr><td data-i18n="specs.table.pot">Soluble Potassium (K₂O)</td><td>2–4%</td></tr>
+                                        <tr><td data-i18n="specs.table.moisture">Moisture</td><td dir="ltr">&lt;20%</td></tr>
+                                        <tr><td data-i18n="specs.table.ph">pH</td><td>6.5–7.5</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="spec-note"><strong data-i18n="specs.note.label">Note:</strong> <span data-i18n="specs.p6.note">Contains natural chitin and beneficial microorganisms.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Section -->
+        <section id="market" class="market-section dark-bg reveal">
+            <div class="deco-layer market-glass-lines"></div>
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow" data-i18n="market.eyebrow">The Opportunity</span>
+                    <h2 class="section-title" data-i18n="market.title">A Fast-Growing Global Sector.</h2>
+                </div>
+                
+                <div class="drivers-container">
+                    <div class="driver-card"><i data-lucide="trending-up" class="icon"></i> <span data-i18n="market.driver.1">Rising costs of conventional feed</span></div>
+                    <div class="driver-card"><i data-lucide="activity" class="icon"></i> <span data-i18n="market.driver.2">Growing global protein demand</span></div>
+                    <div class="driver-card"><i data-lucide="globe" class="icon"></i> <span data-i18n="market.driver.3">Worldwide shift to a green economy</span></div>
+                    <div class="driver-card"><i data-lucide="shield-check" class="icon"></i> <span data-i18n="market.driver.4">Demand for low-emission solutions</span></div>
+                    <div class="driver-card"><i data-lucide="bird" class="icon"></i> <span data-i18n="market.driver.5">Poultry & aquaculture expansion</span></div>
+                </div>
+                
+                <div class="three-columns target-sectors">
+                    <div class="column panel text-center">
+                        <div class="sector-icon"><i data-lucide="bird"></i></div>
+                        <h3 data-i18n="market.sector1.title">Feed</h3>
+                        <ul class="sector-list">
+                            <li data-i18n="market.sector1.i1">Poultry farms</li>
+                            <li data-i18n="market.sector1.i2">Aquaculture operators</li>
+                            <li data-i18n="market.sector1.i3">Feed manufacturers</li>
+                            <li data-i18n="market.sector1.i4">Pet-food brands</li>
+                        </ul>
+                    </div>
+                    <div class="column panel text-center">
+                        <div class="sector-icon"><i data-lucide="sprout"></i></div>
+                        <h3 data-i18n="market.sector2.title">Agriculture</h3>
+                        <ul class="sector-list">
+                            <li data-i18n="market.sector2.i1">Organic farms</li>
+                            <li data-i18n="market.sector2.i2">Greenhouse operators</li>
+                            <li data-i18n="market.sector2.i3">Fertilizer companies</li>
+                        </ul>
+                    </div>
+                    <div class="column panel text-center">
+                        <div class="sector-icon"><i data-lucide="recycle"></i></div>
+                        <h3 data-i18n="market.sector3.title">Waste Management</h3>
+                        <ul class="sector-list">
+                            <li data-i18n="market.sector3.i1">Municipalities</li>
+                            <li data-i18n="market.sector3.i2">Central markets</li>
+                            <li data-i18n="market.sector3.i3">Food companies</li>
+                            <li data-i18n="market.sector3.i4">Industrial kitchens</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="expansion-strip">
+                    <span class="pulse-dot"></span>
+                    <p data-i18n="market.expansion">Operational in Jordan, with clear expansion potential into Egypt and the Gulf.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section id="impact" class="impact-section light-bg reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow" data-i18n="impact.eyebrow">Our Commitment</span>
+                    <h2 class="section-title" data-i18n="impact.title">Triple Impact</h2>
+                </div>
+                <div class="three-columns">
+                    <div class="column impact-col panel">
+                        <div class="impact-icon"><i data-lucide="leaf"></i></div>
+                        <h3 data-i18n="impact.1.title">Environmental</h3>
+                        <p data-i18n="impact.1.copy">Reduces organic-waste volumes, lowers landfill emissions, supports recycling streams, and reduces conventional-protein reliance.</p>
+                    </div>
+                    <div class="column impact-col panel">
+                        <div class="impact-icon"><i data-lucide="trending-up"></i></div>
+                        <h3 data-i18n="impact.2.title">Economic</h3>
+                        <p data-i18n="impact.2.copy">Cuts local feed costs, creates sustainable protein alternatives, adds value to organic waste, and establishes multiple revenue streams.</p>
+                    </div>
+                    <div class="column impact-col panel">
+                        <div class="impact-icon"><i data-lucide="users"></i></div>
+                        <h3 data-i18n="impact.3.title">Social</h3>
+                        <p data-i18n="impact.3.copy">Creates green jobs, supports entrepreneurship, develops local agriculture, and empowers youth employment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources / Downloads Section -->
+        <section id="resources" class="resources-section dark-bg reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow" data-i18n="resources.eyebrow">Library</span>
+                    <h2 class="section-title" data-i18n="resources.title">Resources & Downloads</h2>
+                </div>
+                <div class="resources-grid">
+                    <a href="./assets/specifications.pdf" target="_blank" class="resource-card">
+                        <div class="resource-icon"><i data-lucide="file-text"></i></div>
+                        <div class="resource-info">
+                            <h3 data-i18n="res.1.title">Technical Datasheet</h3>
+                            <p data-i18n="res.1.copy">Complete BSF ingredient range specifications.</p>
+                            <span class="download-link"><span data-i18n="res.link">Download PDF</span> <i data-lucide="download" class="icon-xs"></i></span>
+                        </div>
+                    </a>
+                    <a href="./assets/brochure_en.pdf" target="_blank" class="resource-card">
+                        <div class="resource-icon"><i data-lucide="bar-chart-2"></i></div>
+                        <div class="resource-info">
+                            <h3 data-i18n="res.2.title">Investor Brief</h3>
+                            <p data-i18n="res.2.copy">Detailed overview of our business model and expansion plan.</p>
+                            <span class="download-link"><span data-i18n="res.link">Download PDF</span> <i data-lucide="download" class="icon-xs"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section light-bg reveal">
+            <div class="container faq-container">
+                <div class="section-header text-center">
+                    <span class="eyebrow" data-i18n="faq.eyebrow">Questions</span>
+                    <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
+                </div>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-header" aria-expanded="false">
+                            <span data-i18n="faq.1.q">What is the Black Soldier Fly?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p data-i18n="faq.1.a">The Black Soldier Fly (Hermetia illucens) is a harmless, non-pest insect. In its larval stage, it is an incredibly efficient bio-converter, rapidly consuming organic waste and transforming it into high-value protein and fat.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-header" aria-expanded="false">
+                            <span data-i18n="faq.2.q">What organic inputs do you accept?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p data-i18n="faq.2.a">We process a wide range of clean organic waste, including central-market produce waste, restaurant and hotel residuals, food-processing by-products, agricultural residues, and select animal by-products.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-header" aria-expanded="false">
+                            <span data-i18n="faq.3.q">How long is the production cycle?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p data-i18n="faq.3.a">Our rearing cycle is extremely rapid, typically taking only 10 to 14 days for the larvae to fully process the feedstock and reach harvest size.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-header" aria-expanded="false">
+                            <span data-i18n="faq.4.q">Are your products free from antibiotics and hormones?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p data-i18n="faq.4.a">Yes. All Ecovera products are 100% natural, processed under controlled conditions, and completely free from artificial hormones and antibiotics.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-header" aria-expanded="false">
+                            <span data-i18n="faq.5.q">Which sectors do you serve?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p data-i18n="faq.5.a">We serve the feed sector (poultry farms, aquaculture, pet food), agriculture (organic farming, fertilizer companies), and provide waste management services for municipalities and food companies.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-header" aria-expanded="false">
+                            <span data-i18n="faq.6.q">Where are you based and where are you expanding?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p data-i18n="faq.6.a">Ecovera is currently operational in Jordan, with strategic plans for geographic expansion into Egypt and the wider Gulf region.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing CTA Band -->
+        <section class="closing-cta dark-bg reveal">
+            <div class="container text-center">
+                <h2 data-i18n="cta.title">Let's build the next model for the circular economy.</h2>
+                <a href="#contact" class="btn btn-primary btn-lg mt-4" data-i18n="cta.button">Get in Touch</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section dark-bg reveal">
+            <div class="deco-layer">
+                <div class="contact-glow"></div>
+            </div>
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-wrapper">
+                        <div class="form-header">
+                            <span class="eyebrow" data-i18n="contact.eyebrow">Partner With Us</span>
+                            <h2 class="section-title" data-i18n="contact.title">Start the Conversation</h2>
+                        </div>
+                        <form id="contact-form" class="contact-form brand-form" action="#" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" data-i18n="contact.form.name">Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" data-i18n="contact.form.email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="company" data-i18n="contact.form.company">Company</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-i18n="contact.form.message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span data-i18n="contact.form.submit">Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-details-panel">
+                        <div class="detail-lockup">
+                            <div class="logo-mark-chip mb-3">
+                                <img src="./assets/logo.jpeg" alt="" class="logo-img">
+                            </div>
+                            <h3 data-i18n="brand.name">Ecovera</h3>
+                            <p class="brand-sub" data-i18n="brand.tagline">Sustainable Feed & Bio Solutions</p>
+                        </div>
+                        
+                        <div class="detail-items">
+                            <div class="detail-item">
+                                <span class="detail-label"><i data-lucide="user" class="icon-sm"></i> <span data-i18n="contact.details.founder">Founder</span></span>
+                                <p data-i18n="contact.details.founder.val">Ammar Al-Rafou</p>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label"><i data-lucide="map-pin" class="icon-sm"></i> <span data-i18n="contact.details.location">Location</span></span>
+                                <p data-i18n="contact.details.location.val">Jordan</p>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label"><i data-lucide="mail" class="icon-sm"></i> <span data-i18n="contact.details.contact">Contact</span></span>
+                                <p><a href="mailto:contact@ecovera.com">contact@ecovera.com</a></p>
+                                <p dir="ltr"><a href="tel:+96200000000">+962 00 000 0000</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer dark-bg">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo-lockup mb-3" aria-label="Ecovera Home">
+                    <div class="logo-mark-chip">
+                        <img src="./assets/logo.jpeg" alt="" class="logo-img">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-name" data-i18n="brand.name">Ecovera</span>
+                    </div>
+                </a>
+                <p class="footer-tagline" data-i18n="brand.tagline">Sustainable Feed & Bio Solutions</p>
+                <div class="footer-socials mt-3">
+                    <a href="#" aria-label="LinkedIn" class="social-link"><i data-lucide="linkedin"></i></a>
+                    <a href="#" aria-label="Twitter" class="social-link"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4 data-i18n="footer.nav">Navigation</h4>
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#process" data-i18n="nav.process">Process</a>
+                <a href="#market" data-i18n="nav.market">Market</a>
+                <a href="#impact" data-i18n="nav.impact">Impact</a>
+                <a href="#faq" data-i18n="nav.faq">FAQ</a>
+            </div>
+            
+            <div class="footer-col">
+                <h4 data-i18n="footer.prod">Products</h4>
+                <a href="#spec-full-fat-meal" class="smooth-scroll" data-i18n="prod.1.title">Protein Feed</a>
+                <a href="#spec-bsf-oil" class="smooth-scroll" data-i18n="prod.3.title">Insect Oil</a>
+                <a href="#spec-bsf-frass" class="smooth-scroll" data-i18n="prod.2.title">Bio Fertilizer</a>
+                <a href="#spec-bsf-frass" class="smooth-scroll" data-i18n="prod.4.title">BSF Compost</a>
+            </div>
+            
+            <div class="footer-col">
+                <h4 data-i18n="footer.contact">Contact</h4>
+                <a href="#contact" data-i18n="nav.contact">Get in Touch</a>
+                <a href="mailto:contact@ecovera.com">contact@ecovera.com</a>
+                <p class="mt-2 text-muted" data-i18n="contact.details.location.val">Jordan</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p><span data-i18n="footer.bottom">&copy; 2026 Ecovera &middot; Sustainable Feed & Bio Solutions. All Rights Reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
