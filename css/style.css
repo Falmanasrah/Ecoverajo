@@ -622,7 +622,13 @@ button {
 .mobile-lang-option {
     color: var(--color-surface); font-size: var(--text-lg);
     display: flex; align-items: center; gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--border-radius-md);
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: background-color var(--transition-fast);
 }
+.mobile-lang-option:active { background-color: rgba(255,255,255,0.15); }
 
 /* ==========================================================================
    Hero Section
@@ -986,6 +992,9 @@ html[dir="rtl"] .expansion-strip { background: linear-gradient(-90deg, rgba(179,
    Responsive Adjustments
    ========================================================================== */
 @media (max-width: 1024px) {
+    .nav-links { display: none; }
+    .lang-switcher { display: none; }
+    .mobile-menu-btn { display: flex; }
     .product-grid { grid-template-columns: 1fr; }
     .three-columns { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
@@ -997,8 +1006,6 @@ html[dir="rtl"] .expansion-strip { background: linear-gradient(-90deg, rgba(179,
 }
 @media (max-width: 768px) {
     :root { --text-6xl: 3.5rem; --text-5xl: 3rem; --text-4xl: 2.5rem; --space-16: 5rem; }
-    .nav-right { display: none; }
-    .mobile-menu-btn { display: flex; }
     .hero-title { font-size: 3rem; }
     .two-columns { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }
