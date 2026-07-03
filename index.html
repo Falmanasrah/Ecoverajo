@@ -86,21 +86,68 @@
 
     <!-- Mobile Full Screen Menu -->
     <div class="mobile-menu-overlay">
-        <nav class="mobile-nav">
-            <a href="#about" class="mobile-nav-item" data-i18n="nav.about">About</a>
-            <a href="#process" class="mobile-nav-item" data-i18n="nav.process">Process</a>
-            <a href="#products" class="mobile-nav-item" data-i18n="nav.products">Products</a>
-            <a href="#specifications" class="mobile-nav-item" data-i18n="nav.specs">Specifications</a>
-            <a href="#market" class="mobile-nav-item" data-i18n="nav.market">Market</a>
-            <a href="#impact" class="mobile-nav-item" data-i18n="nav.impact">Impact</a>
-            <a href="#faq" class="mobile-nav-item" data-i18n="nav.faq">FAQ</a>
-            <a href="#contact" class="btn btn-primary mobile-nav-btn" data-i18n="nav.contact">Get in Touch</a>
-            
-            <div class="mobile-lang-switcher">
-                <button class="mobile-lang-option" data-lang="en"><span class="flag">🇺🇸</span> English</button>
-                <button class="mobile-lang-option" data-lang="ar"><span class="flag">🇯🇴</span> العربية</button>
+        <div class="mobile-menu-container">
+            <!-- Brand Header -->
+            <div class="mobile-menu-header">
+                <div class="logo-mark-chip large">
+                    <img src="./assets/logo.jpeg" alt="" class="logo-img">
+                </div>
+                <div class="logo-text text-center mt-2">
+                    <span class="logo-name" data-i18n="brand.name">Ecovera</span>
+                    <span class="logo-tag" data-i18n="brand.tagline">Sustainable Feed & Bio Solutions</span>
+                </div>
             </div>
-        </nav>
+
+            <!-- Navigation Cards -->
+            <nav class="mobile-nav-cards">
+                <a href="#about" class="mobile-card-link">
+                    <div class="card-icon"><i data-lucide="info"></i></div>
+                    <div class="card-text" data-i18n="nav.about">About</div>
+                    <div class="card-arrow"><i data-lucide="chevron-right"></i></div>
+                </a>
+                <a href="#process" class="mobile-card-link">
+                    <div class="card-icon"><i data-lucide="settings"></i></div>
+                    <div class="card-text" data-i18n="nav.process">Process</div>
+                    <div class="card-arrow"><i data-lucide="chevron-right"></i></div>
+                </a>
+                <a href="#products" class="mobile-card-link">
+                    <div class="card-icon"><i data-lucide="package"></i></div>
+                    <div class="card-text" data-i18n="nav.products">Products</div>
+                    <div class="card-arrow"><i data-lucide="chevron-right"></i></div>
+                </a>
+                <a href="#specifications" class="mobile-card-link">
+                    <div class="card-icon"><i data-lucide="file-text"></i></div>
+                    <div class="card-text" data-i18n="nav.specs">Specifications</div>
+                    <div class="card-arrow"><i data-lucide="chevron-right"></i></div>
+                </a>
+                <a href="#market" class="mobile-card-link">
+                    <div class="card-icon"><i data-lucide="trending-up"></i></div>
+                    <div class="card-text" data-i18n="nav.market">Market</div>
+                    <div class="card-arrow"><i data-lucide="chevron-right"></i></div>
+                </a>
+                <a href="#impact" class="mobile-card-link">
+                    <div class="card-icon"><i data-lucide="leaf"></i></div>
+                    <div class="card-text" data-i18n="nav.impact">Impact</div>
+                    <div class="card-arrow"><i data-lucide="chevron-right"></i></div>
+                </a>
+                <a href="#faq" class="mobile-card-link">
+                    <div class="card-icon"><i data-lucide="help-circle"></i></div>
+                    <div class="card-text" data-i18n="nav.faq">FAQ</div>
+                    <div class="card-arrow"><i data-lucide="chevron-right"></i></div>
+                </a>
+            </nav>
+
+            <!-- Bottom Actions -->
+            <div class="mobile-menu-actions">
+                <a href="#contact" class="btn btn-primary mobile-cta-btn" data-i18n="nav.contact">Get in Touch</a>
+                
+                <div class="mobile-lang-switcher modern-lang">
+                    <button class="mobile-lang-option" data-lang="en"><span class="flag">🇺🇸</span> English</button>
+                    <div class="lang-divider"></div>
+                    <button class="mobile-lang-option" data-lang="ar"><span class="flag">🇯🇴</span> العربية</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <main>

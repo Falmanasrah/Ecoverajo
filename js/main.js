@@ -483,7 +483,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Close menu when a link is clicked
-        document.querySelectorAll('.mobile-nav-item, .mobile-nav-btn').forEach(link => {
+        document.querySelectorAll('.mobile-card-link, .mobile-cta-btn').forEach(link => {
             link.addEventListener('click', () => {
                 mobileBtn.setAttribute('aria-expanded', 'false');
                 mobileMenu.classList.remove('active');
@@ -669,7 +669,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Smooth Scroll for Anchor Links ---
-    document.querySelectorAll('.smooth-scroll, a[href^="#"]:not(.nav-item):not(.mobile-nav-item):not(.btn)').forEach(anchor => {
+    document.querySelectorAll('.smooth-scroll, a[href^="#"]:not(.nav-item):not(.mobile-card-link):not(.btn)').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href') || this.getAttribute('data-target');
             if(!targetId || targetId === '#') return;
@@ -698,7 +698,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    document.querySelectorAll('.nav-item, .mobile-nav-item, .btn[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('.nav-item, .mobile-card-link, .btn[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
             if(!targetId || targetId === '#') return;
