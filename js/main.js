@@ -185,6 +185,8 @@ const translations = {
         "footer.nav": "Navigation",
         "footer.prod": "Products",
         "footer.contact": "Contact",
+        "splash.tagline": "Premium Bio-Proteins • Sustainable Fertilizers • Eco-Oils",
+        "splash.slogan": "\"Empowering agriculture with next-generation organic nutrients.\"",
         "footer.bottom": "© 2026 Ecovera · Sustainable Feed & Bio Solutions. All Rights Reserved."
     },
     ar: {
@@ -372,6 +374,8 @@ const translations = {
         "footer.nav": "روابط سريعة",
         "footer.prod": "المنتجات",
         "footer.contact": "تواصل معنا",
+        "splash.tagline": "بروتينات حيوية ممتازة • أسمدة مستدامة • زيوت صديقة للبيئة",
+        "splash.slogan": "\"تمكين الزراعة بمغذيات عضوية من الجيل القادم.\"",
         "footer.bottom": "© 2026 إيكوفيرا · حلول الأعلاف الحيوية والمستدامة. جميع الحقوق محفوظة."
     }
 };
@@ -396,6 +400,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update DOM direction and lang
         document.documentElement.lang = lang;
         document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+        
+        document.querySelectorAll('img.logo-img, img.splash-logo-img').forEach(img => {
+            img.src = lang === 'ar' ? './assets/arabic_logo.png' : './assets/logo_nobackground.png';
+        });
         
         // Update all translation keys
         document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -743,9 +751,54 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }, { threshold: 0 });
 
-            document.querySelectorAll('.eco-ring, .spore, .splash-logo-container, .about-shape, .products-leaf').forEach(el => {
+            document.querySelectorAll('.hero-orb-1, .hero-orb-2, .about-shape, .products-leaf').forEach(el => {
                 pauseAnimationsOnHide.observe(el);
             });
         }
+    }
+});
+
+// --- Contact Form Handling ---
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span class="spinner"></span> Sending...';
+            submitBtn.disabled = true;
+
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                company: document.getElementById('company').value,
+                message: document.getElementById('message').value
+            };
+
+            try {
+                const response = await fetch('/.netlify/functions/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok) {
+                    alert(document.documentElement.lang === 'ar' ? 'تم إرسال رسالتك بنجاح!' : 'Your message has been sent successfully!');
+                    contactForm.reset();
+                } else {
+                    alert((document.documentElement.lang === 'ar' ? 'خطأ: ' : 'Error: ') + (result.error || 'Unknown error'));
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                alert(document.documentElement.lang === 'ar' ? 'حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.' : 'An error occurred. Please try again later.');
+            } finally {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }
+        });
     }
 });

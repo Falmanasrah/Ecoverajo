@@ -1,0 +1,8 @@
+{
+  "name": "ecovera",
+  "version": "1.0.0",
+  "description": "Ecovera Static Site with Netlify Functions",
+  "dependencies": {
+    "resend": "^3.5.0"
+  }
+}
