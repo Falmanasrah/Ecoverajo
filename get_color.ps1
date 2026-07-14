@@ -1,0 +1,1 @@
+Add-Type -AssemblyName System.Drawing; $bmp = New-Object System.Drawing.Bitmap("c:\Users\msi\OneDrive\Desktop\ecovera\assets\logo_dark.png"); $color = $bmp.GetPixel(0,0); $hex = "#{0:X2}{1:X2}{2:X2}" -f $color.R, $color.G, $color.B; Write-Output $hex

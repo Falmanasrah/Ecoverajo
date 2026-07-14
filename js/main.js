@@ -743,7 +743,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }, { threshold: 0 });
 
-            document.querySelectorAll('.hero-orb-1, .hero-orb-2, .about-shape, .products-leaf').forEach(el => {
+            document.querySelectorAll('.eco-ring, .spore, .splash-logo-container, .about-shape, .products-leaf').forEach(el => {
                 pauseAnimationsOnHide.observe(el);
             });
         }
