@@ -187,7 +187,12 @@ const translations = {
         "footer.contact": "Contact",
         "splash.tagline": "Premium Bio-Proteins • Sustainable Fertilizers • Eco-Oils",
         "splash.slogan": "\"Empowering agriculture with next-generation organic nutrients.\"",
-        "footer.bottom": "© 2026 Ecovera · Sustainable Feed & Bio Solutions. All Rights Reserved."
+        "footer.bottom": "© 2026 Ecovera · Sustainable Feed & Bio Solutions. All Rights Reserved.",
+        "legal.privacy": "Privacy Policy",
+        "legal.terms": "Terms & Conditions",
+        "legal.cookie": "Cookie Policy",
+        "legal.disclaimer": "Product Disclaimer",
+        "legal.ip": "Intellectual Property Notice"
     },
     ar: {
         "brand.name": "إيكوفيرا",
@@ -376,7 +381,12 @@ const translations = {
         "footer.contact": "تواصل معنا",
         "splash.tagline": "بروتينات حيوية ممتازة • أسمدة مستدامة • زيوت صديقة للبيئة",
         "splash.slogan": "\"تمكين الزراعة بمغذيات عضوية من الجيل القادم.\"",
-        "footer.bottom": "© 2026 إيكوفيرا · حلول الأعلاف الحيوية والمستدامة. جميع الحقوق محفوظة."
+        "footer.bottom": "© 2026 إيكوفيرا · حلول الأعلاف الحيوية والمستدامة. جميع الحقوق محفوظة.",
+        "legal.privacy": "سياسة الخصوصية",
+        "legal.terms": "الشروط والأحكام",
+        "legal.cookie": "سياسة ملفات تعريف الارتباط",
+        "legal.disclaimer": "إخلاء المسؤولية عن المنتجات",
+        "legal.ip": "إشعار الملكية الفكرية"
     }
 };
 
@@ -410,6 +420,18 @@ document.addEventListener('DOMContentLoaded', () => {
             const key = el.getAttribute('data-i18n');
             if (translations[lang] && translations[lang][key]) {
                 el.textContent = translations[lang][key];
+            }
+        });
+
+        // Update legal links href based on language
+        document.querySelectorAll('a.legal-link').forEach(el => {
+            const currentHref = el.getAttribute('href');
+            if (currentHref) {
+                if (lang === 'ar' && !currentHref.includes('-ar.html')) {
+                    el.setAttribute('href', currentHref.replace('.html', '-ar.html'));
+                } else if (lang === 'en' && currentHref.includes('-ar.html')) {
+                    el.setAttribute('href', currentHref.replace('-ar.html', '.html'));
+                }
             }
         });
 
