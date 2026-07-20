@@ -1013,9 +1013,9 @@ section:not(.splash-section):not(.intro-section):not(.stats-section):not(.closin
     position: absolute; inset: -30px; width: calc(100% + 60px); height: calc(100% + 60px);
     object-fit: cover; filter: blur(25px) brightness(0.6); z-index: 0;
 }
-.product-image { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: contain; transition: transform var(--transition-slow); }
+.product-image { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: contain; transition: transform var(--transition-slow); transform: scale(1.45); }
 .product-image.crop-center-bag { object-position: center; transform: scale(1.6); }
-.product-card:hover .product-image:not(.crop-center-bag) { transform: scale(1.05); }
+.product-card:hover .product-image:not(.crop-center-bag) { transform: scale(1.55); }
 .product-card:hover .product-image.crop-center-bag { transform: scale(1.7); }
 .placeholder-wrapper { background: radial-gradient(circle, var(--color-secondary-surface), var(--color-primary-dark)); }
 .placeholder-content { display: flex; flex-direction: column; align-items: center; gap: var(--space-4); opacity: 0.8; }
