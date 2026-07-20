@@ -198,6 +198,7 @@ const translations = {
         "contact.details.founder.val": "Ammar Al-Rafou",
         "contact.details.location": "Location",
         "contact.details.location.val": "Jordan",
+        "contact.details.whatsapp": "WhatsApp",
         "contact.details.contact": "Contact",
         "footer.nav": "Navigation",
         "footer.prod": "Products",
@@ -392,6 +393,7 @@ const translations = {
         "contact.details.founder.val": "عمار الرفوع",
         "contact.details.location": "الموقع",
         "contact.details.location.val": "الأردن",
+        "contact.details.whatsapp": "واتساب",
         "contact.details.contact": "التواصل",
         "footer.nav": "روابط سريعة",
         "footer.prod": "المنتجات",
@@ -449,6 +451,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (lang === 'en' && currentHref.includes('-ar.html')) {
                     el.setAttribute('href', currentHref.replace('-ar.html', '.html'));
                 }
+            }
+        });
+
+        // Update whatsapp links href based on language
+        document.querySelectorAll('a.wa-link').forEach(el => {
+            if (lang === 'ar') {
+                el.setAttribute('href', 'https://wa.me/962771513888?text=' + encodeURIComponent('مرحباً، هل يمكنني الحصول على مزيد من المعلومات حول إيكوفيرا؟'));
+            } else {
+                el.setAttribute('href', 'https://wa.me/962771513888?text=' + encodeURIComponent('Hello can i get more info on Ecovera?'));
             }
         });
 
