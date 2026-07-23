@@ -39,10 +39,10 @@ html = html.replace('<a href="#" class="logo-lockup mb-3" aria-label="Ecovera Ho
 // 8. Contact section phone number (keep it original, do not duplicate)
 // the original already has the phone number in #contact. We just need to add it to the footer.
 const footerContact = '<h4 data-i18n="footer.contact">Contact</h4>\n                <a href="#contact" data-i18n="nav.contact">Get in Touch</a>\n                <a href="mailto:info@ecoverajo.com">info@ecoverajo.com</a>';
-const footerContactNew = '<h4 data-i18n="footer.contact">Contact</h4>\n                <a href="#contact" data-i18n="nav.contact">Get in Touch</a>\n                <a href="mailto:info@ecoverajo.com">info@ecoverajo.com</a>\n                <a href="tel:+962771513888" dir="ltr">+962 77 151 3888</a>';
+const footerContactNew = '<h4 data-i18n="footer.contact">Contact</h4>\n                <a href="#contact" data-i18n="nav.contact">Get in Touch</a>\n                <a href="mailto:info@ecoverajo.com">info@ecoverajo.com</a>\n                <a href="tel:+962771513888" dir="ltr">+962771513888</a>';
 html = html.replace(footerContact, footerContactNew);
 const footerContact2 = '<h4 data-i18n="footer.contact">Contact</h4>\r\n                <a href="#contact" data-i18n="nav.contact">Get in Touch</a>\r\n                <a href="mailto:info@ecoverajo.com">info@ecoverajo.com</a>';
-const footerContactNew2 = '<h4 data-i18n="footer.contact">Contact</h4>\r\n                <a href="#contact" data-i18n="nav.contact">Get in Touch</a>\r\n                <a href="mailto:info@ecoverajo.com">info@ecoverajo.com</a>\r\n                <a href="tel:+962771513888" dir="ltr">+962 77 151 3888</a>';
+const footerContactNew2 = '<h4 data-i18n="footer.contact">Contact</h4>\r\n                <a href="#contact" data-i18n="nav.contact">Get in Touch</a>\r\n                <a href="mailto:info@ecoverajo.com">info@ecoverajo.com</a>\r\n                <a href="tel:+962771513888" dir="ltr">+962771513888</a>';
 html = html.replace(footerContact2, footerContactNew2);
 
 fs.writeFileSync('c:/Users/msi/OneDrive/Desktop/ecovera/index.html', html, 'utf8');

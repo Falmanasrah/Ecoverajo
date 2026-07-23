@@ -1,0 +1,1 @@
+- Communication Rule: Always explicitly list the files you changed and specify which sections of those files were modified.

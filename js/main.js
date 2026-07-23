@@ -457,9 +457,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update whatsapp links href based on language
         document.querySelectorAll('a.wa-link').forEach(el => {
             if (lang === 'ar') {
-                el.setAttribute('href', 'https://wa.me/962771513888?text=' + encodeURIComponent('مرحباً، هل يمكنني الحصول على مزيد من المعلومات حول إيكوفيرا؟'));
+                el.setAttribute('href', 'https://wa.me/+962771513888?text=' + encodeURIComponent('مرحباً، هل يمكنني الحصول على مزيد من المعلومات حول إيكوفيرا؟'));
             } else {
-                el.setAttribute('href', 'https://wa.me/962771513888?text=' + encodeURIComponent('Hello can i get more info on Ecovera?'));
+                el.setAttribute('href', 'https://wa.me/+962771513888?text=' + encodeURIComponent('Hello can i get more info on Ecovera?'));
             }
         });
 
